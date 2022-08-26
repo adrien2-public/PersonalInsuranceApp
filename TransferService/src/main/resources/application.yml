@@ -1,0 +1,9 @@
+axon:
+  # consumption configuration for query side  happyCustomerEvent
+  eventhandling:
+    processors:
+      amqpEvents:
+        mode: subscribing
+        source: complaintEvents
+
+

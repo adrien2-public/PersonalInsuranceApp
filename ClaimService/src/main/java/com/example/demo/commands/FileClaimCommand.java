@@ -1,0 +1,108 @@
+package com.example.demo.commands;
+
+
+import com.example.demo.entities.ClaimStatus;
+import com.example.demo.entities.IncidentType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
+
+import java.time.LocalDateTime;
+
+
+@AllArgsConstructor
+@Builder
+public class FileClaimCommand {
+
+
+    @TargetAggregateIdentifier
+    private String claimId;
+
+    private String policyId;
+    private String firstName;
+    private String lastName;
+    private LocalDateTime date;
+    private double damages;
+    private IncidentType incidentType;
+    private ClaimStatus status;
+    private String comments;
+
+
+    public FileClaimCommand(   ) {
+
+    }
+
+    public String getClaimId() {
+        return claimId;
+    }
+
+    public void setClaimId(String claimId) {
+        this.claimId = claimId;
+    }
+
+    public String getPolicyId() {
+        return policyId;
+    }
+
+    public void setPolicyId(String policyId) {
+        this.policyId = policyId;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
+
+    public double getDamages() {
+        return damages;
+    }
+
+    public void setDamages(double damages) {
+        this.damages = damages;
+    }
+
+    public IncidentType getIncidentType() {
+        return incidentType;
+    }
+
+    public void setIncidentType(IncidentType incidentType) {
+        this.incidentType = incidentType;
+    }
+
+    public ClaimStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(ClaimStatus status) {
+        this.status = status;
+    }
+
+    public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
+    }
+}
