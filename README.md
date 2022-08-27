@@ -31,7 +31,7 @@ $ docker compose up
 
 
 
-5) Fill out applciation form, in order to receive our policy. Dummy command from David Thomas (random name) made below, Bank Account Account # is from step 4
+5) Fill out applciation form, in order to receive our policy. Dummy command from David Thomas (random name) made below, Bank Account Account # is from step 4. Destination address  is http://localhost:8083/claims/policy
 
 ```
 {
