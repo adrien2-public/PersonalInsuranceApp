@@ -34,10 +34,6 @@ $ docker compose up
 5) Fill out applciation form, in order to receive our policy. Dummy command from David Thomas (random name) made below, Bank Account Account # is from step 4
 
 ```
-
-http://localhost:8083/claims/policy
-
-FILLING POLICY GENERATION
 {
 "firstName" : "David",
 "lastName" : "Thomas",
