@@ -19,6 +19,7 @@ $ docker compose up
 POST REQUEST
 http://localhost:8081/bank-account/create-business  
 
+
 {
 "accountNumber" : "aa83cab5-55bc-42d1-b075-6196271cdeb2"
 }
@@ -29,6 +30,7 @@ http://localhost:8081/bank-account/create-business
 ```
 POST REQUEST
 http://localhost:8081/bank-account/create
+
 
 {
 "overdraftLimit" : 250
@@ -42,6 +44,7 @@ http://localhost:8081/bank-account/create
 ```
 POST REQUEST
 http://localhost:8083/claims/policy
+
 
 {
 "firstName" : "David",
@@ -58,6 +61,7 @@ http://localhost:8083/claims/policy
 ```
 POST REQUEST
 http://localhost:8083/claims/file
+
 
 {
 "firstName" : "David",
