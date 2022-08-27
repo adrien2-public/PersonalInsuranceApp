@@ -16,6 +16,8 @@ $ docker compose up
 
 3) Send cUrl command to this address: http://localhost:8081/bank-account/create-business  to create business account for the Insurance company
 ```
+POST REQUEST
+http://localhost:8081/bank-account/create-business  
 {
 "accountNumber" : "aa83cab5-55bc-42d1-b075-6196271cdeb2"
 }
