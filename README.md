@@ -66,8 +66,8 @@ http://localhost:8083/claims/file
 {
 "firstName" : "David",
 "lastName" : "Thomas",
-"damagesClaimed" : 255	,
-"incidentType" :	"2"	,
+"damagesClaimed" : 255 ,
+"incidentType" : "2" ,
 "policyId" : "91a75769-8204-490e-9515-b89626938aa6"
 
 }
