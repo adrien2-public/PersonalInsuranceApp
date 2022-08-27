@@ -24,6 +24,8 @@ $ docker compose up
 4) Send cUrl command to this address: http://localhost:8081/bank-account/create   to create an account with an overdraft limit. Account # will be returned, save number.
 
 ```
+POST REQUEST
+http://localhost:8081/bank-account/create
 {
 "overdraftLimit" : 250
 }
@@ -34,6 +36,9 @@ $ docker compose up
 5) Fill out applciation form, in order to receive our policy. Dummy command from David Thomas (random name) made below, Bank Account Account # is from step 4. Destination address  is http://localhost:8083/claims/policy
 
 ```
+POST REQUEST
+http://localhost:8083/claims/policy
+
 {
 "firstName" : "David",
 "lastName" : "Thomas",
@@ -47,6 +52,9 @@ $ docker compose up
 
 6) Make attempt to file a claim, POST request to address : http://localhost:8083/claims/file . Send the below body as an example. Response will be given if successful
 ```
+POST REQUEST
+http://localhost:8083/claims/file
+
 {
 "firstName" : "David",
 "lastName" : "Thomas",
